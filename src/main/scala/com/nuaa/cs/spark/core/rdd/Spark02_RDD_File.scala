@@ -15,7 +15,8 @@ object Spark02_RDD_File {
 
     //spark读取文件时，默认采用的是Hadoop读取文件（hdfs）
     //默认是一行一行的读取文件内容
-    val fileRDD: RDD[String] = sc.textFile("input")
+
+    val fileRDD: RDD[String] = sc.textFile("input",1)
     //val fileRDD: RDD[String] = sc.textFile("hdfs://input/data.txt")
     fileRDD.collect().foreach(println)
     sc.stop()
