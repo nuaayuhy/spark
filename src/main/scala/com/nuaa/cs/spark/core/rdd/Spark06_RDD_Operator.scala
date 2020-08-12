@@ -3,7 +3,7 @@ package com.nuaa.cs.spark.core.rdd
 import org.apache.spark.rdd.RDD
 import org.apache.spark.{SparkConf, SparkContext}
 
-object Spark09_RDD_Operator {
+object Spark06_RDD_Operator {
 
 
   def main(args: Array[String]): Unit = {
