@@ -15,9 +15,9 @@ object Spark12_RDD_filter {
 
     // filter
     // 生成数据，按照指定的规则进行过滤
-    val listRDD:RDD[List[Int]] = sparkContext.makeRDD(List(1,2,3,4))
+    val listRDD= sparkContext.makeRDD(List(1,2,3,4))
 
-    val filterRDD: RDD[List[Int]] = listRDD.filter(x=>x%2==0)
+    val filterRDD = listRDD.filter(x=>x%2==0)
 
     filterRDD.collect().foreach(println)
 
